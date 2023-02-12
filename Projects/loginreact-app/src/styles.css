@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -21,14 +22,23 @@
   background-color: #0f051f;
 }
 
-img{
-  width: 100px;
-}
+.login-form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 
+}
 .login-form-title{
   color: #e7e3f3;
   font-size: 30px;
+  font-weight: 500;
   display: block;
+  margin-bottom: 60px;
+}
+
+.login-form-icon img{
+ width: 100px;
+
 }
 
 .wrap-input{
@@ -38,7 +48,18 @@ img{
   margin-bottom: 37px;
 }
 
-.wrap-input input{
+.wrap-login{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+}
+
+input{
   width: 80%;
+  border:none;
+  
 }
 

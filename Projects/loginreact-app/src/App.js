@@ -1,4 +1,4 @@
-import iconjp from "./assets/jp.svg"
+import reacticon from "./assets/reacticon.svg"
 import './styles.css'
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
 
           <span className="login-form-title">Bem Vindo</span>
 
-          <span className="login-form-title">
-            <img src={iconjp}></img>
-          </span>
+          <div className="login-form-icon">
+            <img src={reacticon}></img>
+          </div>
 
           <div className="wrap-input">
             <input type="email"/>
