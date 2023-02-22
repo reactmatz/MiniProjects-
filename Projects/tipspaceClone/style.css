@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Passion+One:wght@400;700&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -19,7 +20,7 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  background-color: #070420;
+  background-color: #070421;
   cursor: pointer;
   font-weight: 600;
   
@@ -87,3 +88,53 @@
 }
 
 /*  start section one */
+
+.container-section{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100vw;
+  background-color: #070421;
+
+}
+.wrap-section-container{
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wrap-section-container video{
+  position: relative;
+  right: 50px;
+  transform: skewX(-10deg);
+  
+}
+
+.title-sec{
+  position: relative;
+  font-weight: 500;
+  z-index: 1000;
+  font-family: 'Bangers', sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.title-sec span{
+  color: #00e3e8;
+}
+
+.text-sec{
+  font-size: 20px;
+  position: relative;
+  z-index: 1000;
+  left: 50px;
+}
+
+.aside-content{
+  position: relative;
+  bottom: 40px;
+}
+
