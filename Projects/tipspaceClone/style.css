@@ -89,6 +89,17 @@
 
 /*  start section one */
 
+/* Classes */
+
+/* .Align-center{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100vw;
+  background-color: #070421;
+} */
+
+
 .container-section{
   display: flex;
   justify-content: center;
@@ -130,11 +141,48 @@
   font-size: 20px;
   position: relative;
   z-index: 1000;
-  left: 50px;
+  left: 5px;
 }
 
 .aside-content{
   position: relative;
   bottom: 40px;
 }
+
+.aside-content img {
+  width: 140px;
+  position: absolute;
+  left: 270px;
+  z-index: 1000;
+  bottom: 1px;
+}
+
+.section-3{
+  background-color: #1f1d3f;
+  height: 600px;
+}
+
+.wrap-sec3{
+  margin: 60px auto;
+  width: 1200px;
+  text-align: center;
+}
+
+.wrap-cards{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.card{
+ border: 1px solid #000;
+ width: 400px;
+ height: 200px;
+ padding-top: 60px;
+ background-color: #070421;
+ border-radius: 10px;
+}
+
+
 
