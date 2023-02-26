@@ -49,6 +49,7 @@
   color: #ececec;
   display: flex;
   align-items: center;
+  font-weight: 600;
   
 }
 
@@ -129,8 +130,9 @@
   z-index: 1000;
   font-family: 'Bangers', sans-serif;
   text-transform: uppercase;
-  font-size: 70px;
-  line-height: 60px;
+  font-size: 90px;
+  line-height: 80px;
+  transform: skewX(20deg)
 }
 
 .title-sec span{
@@ -157,9 +159,12 @@
   bottom: 1px;
 }
 
+
+/* /////////////////////////// */
+
 .section-3{
   background-color: #1f1d3f;
-  height: 600px;
+  height: 400px;
 }
 
 .wrap-sec3{
@@ -175,13 +180,31 @@
   margin-top: 60px;
 }
 
+.title-sec3{
+  font-size: 40px;
+}
+
+.sub-title{
+  font-size: 20px;
+}
+
 .card{
  border: 1px solid #000;
  width: 400px;
- height: 200px;
- padding-top: 60px;
+ height: 140px;
+ padding-top: 40px;
  background-color: #070421;
  border-radius: 10px;
+}
+
+.card span{ 
+  color: #00e3e8;
+  font-weight: 600;
+
+}
+
+.card p {
+  font-size: 14px;
 }
 
 
