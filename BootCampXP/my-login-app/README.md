@@ -48,30 +48,8 @@ npm start
 A aplicação estará disponível em http://localhost:3000.
 
 Estrutura do Projeto
-my-login-app/
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   ├── manifest.json
-│   └── robots.txt
-├── src/
-│   ├── components/
-│   │   └── LoginForm.tsx
-│   ├── services/
-│   │   └── authService.ts
-│   ├── validation/
-│   │   └── loginValidation.ts
-│   ├── App.tsx
-│   ├── index.tsx
-│   └── index.css
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── tsconfig.json
-├── README.md
-└── node_modules/
-Contribuição
-Faça um fork do projeto.
+![Estrutura do projeto](https://postimg.cc/qgP8JcgT)
+
 
 Crie uma nova branch:
 
