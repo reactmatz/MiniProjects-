@@ -48,7 +48,8 @@ npm start
 A aplicação estará disponível em http://localhost:3000.
 
 Estrutura do Projeto
-![Estrutura do projeto](https://iili.io/2A8kMns.png)
+<img src="https://iili.io/2A8kMns.png" alt="/" width="600" height="600" />
+
 
 
 Crie uma nova branch:
