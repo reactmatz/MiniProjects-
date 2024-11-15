@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub Repo Wiki
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+GitHub Repo Wiki é uma aplicação web desenvolvida com Next.js que permite aos usuários pesquisar repositórios do GitHub e salvá-los em uma wiki pessoal. Esta aplicação demonstra o uso de APIs externas, gerenciamento de estado local e armazenamento persistente no navegador.
 
-```bash
+## Funcionalidades
+
+- Pesquisa de repositórios do GitHub em tempo real
+- Exibição de detalhes dos repositórios (nome, descrição, estrelas, forks)
+- Salvamento de repositórios favoritos em uma wiki pessoal
+- Remoção de repositórios da wiki
+- Interface responsiva e amigável ao usuário
+
+## Tecnologias Utilizadas
+
+- Next.js 13 (com App Router)
+- React 18
+- Tailwind CSS
+- shadcn/ui (para componentes de UI)
+- GitHub API
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+
+- Node.js (versão 14.0.0 ou superior)
+- npm (normalmente vem com o Node.js)
+
+## Configuração do Projeto
+
+Siga estes passos para configurar o projeto em sua máquina local:
+
+1. Clone o repositório:
+2. Instale as dependências:
+3. Configure as variáveis de ambiente (se necessário):
+Crie um arquivo `.env.local` na raiz do projeto e adicione quaisquer variáveis de ambiente necessárias.
+
+## Executando o Projeto
+
+Para iniciar o servidor de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/`: Contém os arquivos principais do Next.js App Router
+  - `layout.js`: Layout principal da aplicação
+  - `page.js`: Página inicial da aplicação
+- `src/components/`: Componentes React reutilizáveis
+  - `github-repo-wiki.js`: Componente principal da aplicação
+  - `ui/`: Componentes de UI do shadcn/ui
+- `src/lib/`: Funções utilitárias
+- `public/`: Arquivos estáticos
 
-## Learn More
+## Como Funciona
 
-To learn more about Next.js, take a look at the following resources:
+1. **Pesquisa de Repositórios**: 
+   - Os usuários inserem um termo de pesquisa no campo de entrada.
+   - Ao clicar em "Search", a aplicação faz uma chamada à API do GitHub para buscar repositórios correspondentes.
+   - Os resultados são exibidos em cards na seção "Search Results".
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Salvamento na Wiki**:
+   - Cada resultado de pesquisa tem um botão "Save to Wiki".
+   - Ao clicar neste botão, o repositório é adicionado à lista de repositórios salvos.
+   - Os repositórios salvos são armazenados no localStorage do navegador para persistência.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Visualização da Wiki**:
+   - Os repositórios salvos são exibidos na seção "Saved Repositories".
+   - Cada repositório salvo pode ser removido da wiki clicando no botão "Remove from Wiki".
 
-## Deploy on Vercel
+4. **Responsividade**:
+   - A interface é responsiva, adaptando-se a diferentes tamanhos de tela.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribuindo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+---
+
+Desenvolvido como projeto acadêmico para [XP Inc. Full Stack Developer] Bootcamp
+
