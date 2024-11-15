@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+# My Login App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este projeto é uma aplicação web de login desenvolvida com React e TypeScript, que inclui autenticação e validação. A aplicação permite que os usuários façam login usando suas credenciais ou através de suas contas do Google.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `npm start`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática ao código.
+- **react-google-login**: Biblioteca para implementar autenticação com Google.
+- **axios**: Cliente HTTP para fazer requisições.
+- **yup**: Biblioteca de validação de esquema para JavaScript.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Funcionalidades
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Tela de login com validação de campos.
+- Autenticação com email e senha.
+- Login com conta do Google.
+- Mensagens de erro para validação de campos e login falho.
 
-### `npm test`
+## Configuração do Ambiente de Desenvolvimento
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+- **Node.js**: Certifique-se de ter o Node.js instalado. Você pode baixá-lo [aqui](https://nodejs.org/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/my-login-app.git
+   cd my-login-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Instale as dependências:
 
-### `npm run eject`
+bash
+npm install
+Crie um arquivo .env na raiz do projeto e adicione seu Google Client ID:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+env
+REACT_APP_GOOGLE_CLIENT_ID=seu-client-id-google
+Executando a Aplicação
+Para iniciar o servidor de desenvolvimento, execute:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+npm start
+A aplicação estará disponível em http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Estrutura do Projeto
+my-login-app/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   │   └── LoginForm.tsx
+│   ├── services/
+│   │   └── authService.ts
+│   ├── validation/
+│   │   └── loginValidation.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── index.css
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── tsconfig.json
+├── README.md
+└── node_modules/
+Contribuição
+Faça um fork do projeto.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Crie uma nova branch:
 
-## Learn More
+bash
+git checkout -b minha-nova-feature
+Faça suas alterações e commit:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+git commit -m 'Add nova feature'
+Envie para a branch original:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+git push origin minha-nova-feature
+Abra um Pull Request.
